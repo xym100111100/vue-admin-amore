@@ -49,9 +49,9 @@ export const constantRoutes = [
     redirect: '/dashboard',
     children: [{
       path: 'dashboard',
-      name: 'Dashboard',
+      name: '首页',
       component: () => import('@/views/dashboard/index'),
-      meta: { title: 'Dashboard', icon: 'dashboard' }
+      meta: { title: '首页', icon: 'dashboard' }
     }]
   },
 
@@ -60,7 +60,7 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/example/table',
     name: 'Example',
-    meta: { title: 'Example', icon: 'example' },
+    meta: { title: '示例', icon: 'example' },
     children: [
       {
         path: 'table',
@@ -160,7 +160,18 @@ export const constantRoutes = [
   },
 
   // 404 page must be placed at the end !!!
-  { path: '*', redirect: '/404', hidden: true }
+  { path: '*', redirect: '/404', hidden: true },
+  {
+    path: '/client',
+    component: Layout,
+    redirect: 'index',
+    children: [{
+      path: 'index',
+      name: '客户管理',
+      component: () => import('@/views/client/index'),
+      meta: { title: '客户管理', icon: 'user' }
+    }]
+  },
 ]
 
 const createRouter = () => new Router({

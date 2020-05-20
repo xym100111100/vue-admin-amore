@@ -36,6 +36,15 @@ module.exports = {
       warnings: false,
       errors: true
     },
+  //   proxy:{
+  //     "/dev-api":{
+  //         target:"http://www.duamai.com/sts-svc/account/getByUnionId?unionId=ov3CM0qja42KSafAkbWWc4Ldu-G8",
+  //         changeOrigin:true,
+  //         pathRewrite:{
+  //             '^/dev-api':""
+  //         }
+  //     }
+  // },
     before: require('./mock/mock-server.js')
   },
   configureWebpack: {
