@@ -47,12 +47,14 @@ export const constantRoutes = [
     path: '/',
     component: Layout,
     redirect: '/dashboard',
-    children: [{
-      path: 'dashboard',
-      name: '首页',
-      component: () => import('@/views/dashboard/index'),
-      meta: { title: '首页', icon: 'dashboard' }
-    }]
+    children: [
+      {
+        path: 'dashboard',
+        component: () => import('@/views/dashboard/index'),
+        name: 'Dashboard',
+        meta: { title: '首页', icon: 'dashboard' }
+      }
+    ]
   },
 
   {
@@ -167,7 +169,7 @@ export const constantRoutes = [
     redirect: 'index',
     children: [{
       path: 'index',
-      name: '客户管理',
+      name: 'client',
       component: () => import('@/views/client/index'),
       meta: { title: '客户管理', icon: 'user' }
     }]

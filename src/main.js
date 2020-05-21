@@ -11,6 +11,7 @@ import '@/styles/index.scss' // global css
 import App from './App'
 import store from './store'
 import router from './router'
+import  enumUtils   from './utils/enumOpt'
 
 import '@/icons' // icon
 import '@/permission' // permission control
@@ -39,5 +40,6 @@ new Vue({
   el: '#app',
   router,
   store,
+  enumUtils,
   render: h => h(App)
 })
