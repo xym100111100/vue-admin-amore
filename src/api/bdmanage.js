@@ -1,9 +1,9 @@
 import request from '@/utils/request'
 
 
-export function clientListData(token) {
+export function bdManageData(token) {
   return request({
-    url: '/client/list',
+    url: '/bdmanage/list',
     method: 'get',
     params: {
       token
