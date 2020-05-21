@@ -6,14 +6,14 @@ import {
 import user from './user'
 import table from './table'
 import client from './client'
-import bdmanage from './bdManage'
+import bdManage from './bdManage'
 
 
 const mocks = [
   ...user,
   ...table,
   ...client,
-  ...bdmanage
+  ...bdManage
 ]
 
 // for front mock
