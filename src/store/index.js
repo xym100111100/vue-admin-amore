@@ -5,7 +5,7 @@ import app from './modules/app'
 import settings from './modules/settings'
 import user from './modules/user'
 import client from './modules/client'
-import bdmanage from './modules/bdmanage'
+import bdManage from './modules/bdManage'
 
 
 Vue.use(Vuex)
@@ -16,7 +16,7 @@ const store = new Vuex.Store({
     settings,
     user,
     client,
-    bdmanage
+    bdManage
   },
   getters
 })
