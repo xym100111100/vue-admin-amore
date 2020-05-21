@@ -1,6 +1,6 @@
 import {
   bdManageData
-} from '@/api/bdmanage'
+} from '@/api/bdManage'
 
 // 客户端状态管理，需要将其引入到store/index.js中才能在页面获取到数据
 const getBdManageData = () => {

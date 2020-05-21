@@ -209,7 +209,7 @@ export const constantRoutes = [{
     children: [{
       path: 'bdManage',
       name: 'BD',
-      component: () => import('@/views/bdmanage/bdManage'),
+      component: () => import('@/views/bdManage/bdManage'),
       meta: {
         title: 'BD',
         icon: 'user'
