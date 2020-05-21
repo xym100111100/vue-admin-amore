@@ -11,7 +11,7 @@ import '@/styles/index.scss' // global css
 import App from './App'
 import store from './store'
 import router from './router'
-import  enumUtils   from './utils/enumOpt'
+import enumopt from './utils/enumOpt'
 
 import '@/icons' // icon
 import '@/permission' // permission control
@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === 'production') {
   const { mockXHR } = require('../mock')
   mockXHR()
 }
-
+Vue.use(enumopt)
 // set ElementUI lang to EN
 Vue.use(ElementUI, { locale })
 // 如果想要中文版 element-ui，按如下方式声明
@@ -40,6 +40,5 @@ new Vue({
   el: '#app',
   router,
   store,
-  enumUtils,
   render: h => h(App)
 })

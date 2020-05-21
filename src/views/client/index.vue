@@ -242,7 +242,7 @@
     },
     created() {
       this.getList();
-
+        console.log(this.$enumUtils)
     },
     methods: {
       getList() {
